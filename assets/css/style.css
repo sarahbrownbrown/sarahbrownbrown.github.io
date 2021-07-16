@@ -1,8 +1,28 @@
 /*--------------------------------------------------------------
   # General
   --------------------------------------------------------------*/
+@font-face {
+  font-family: "Vector";
+  src: url("../fonts/VECTORBATTLE-E9XO.TTF");
+}
+
+@font-face {
+  font-family: "Atarian";
+  src: url("../fonts/SFATARIANSYSTEM-D5LR.TTF");
+}
+
+@font-face {
+  font-family: "Pixograd";
+  src: url("../fonts/PIXOGRAD-NKDM.TTF");
+}
+
+@font-face {
+  font-family: "Bit";
+  src: url("../fonts/PressStart2P-vaV7.ttf");
+}
+
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Pixograd";
   color: #272829;
 }
 
@@ -12,8 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", sans-serif;
-  /*color: #d1f7ff;*/
+  font-family: "Vector";
   color: #49fb35;
 }
 
@@ -66,17 +85,9 @@ h6 {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   padding: 0 15px;
-  background: /*#01012b;*/ #110d10;
+  background: #110d10;
   overflow-y: auto;
-  -o-border-image: linear-gradient(to top, #005678, #05d9e8);
-  border-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#005678),
-    to(#05d9e8)
-  );
-  border-image: linear-gradient(to top, #005678, #05d9e8);
+  border-color: #000bbb;
   border-style: solid;
   border-width: 2.5px;
   border-image-slice: 1;
@@ -87,14 +98,14 @@ h6 {
 }
 
 #header .profile h1 {
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
-  /*color: #d1f7ff;*/
   color: #49fb35;
-  font-weight: 50;
+  font-weight: bold;
+  letter-spacing: 2px;
   text-align-last: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Vector";
   text-align: center;
 }
 
@@ -113,7 +124,7 @@ h6 {
   padding: 8px 0;
   margin-right: 4px;
   border-radius: 1px;
-  border-color: #05d9e8;
+  border-color: #000bbb;
   border-style: solid;
   border-width: 1px;
   text-align: center;
@@ -155,6 +166,9 @@ h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: "Bit";
+  font-weight: 200;
+  font-size: 12px;
 }
 
 .nav-menu > ul > li {
@@ -243,36 +257,7 @@ h6 {
 #home {
   width: 100%;
   height: 100vh;
-  background: repeating-linear-gradient(
-      0deg,
-      rgba(78, 91, 73, 0.09) 0px,
-      rgba(78, 91, 73, 0.09) 1px,
-      transparent 1px,
-      transparent 11px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      rgba(78, 91, 73, 0.09) 0px,
-      rgba(78, 91, 73, 0.09) 1px,
-      transparent 1px,
-      transparent 11px
-    ),
-    -webkit-gradient(linear, left bottom, left top, from(#01012b), to(#110d10));
-  background: repeating-linear-gradient(
-      0deg,
-      rgba(78, 91, 73, 0.09) 0px,
-      rgba(78, 91, 73, 0.09) 1px,
-      transparent 1px,
-      transparent 11px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      rgba(78, 91, 73, 0.09) 0px,
-      rgba(78, 91, 73, 0.09) 1px,
-      transparent 1px,
-      transparent 11px
-    ),
-    linear-gradient(to top, #01012b, #110d10);
+  background: #110d10;
   background-size: cover;
 }
 
@@ -293,24 +278,34 @@ h6 {
   min-width: 300px;
 }
 
+#home .home-container h1 {
+  color: white;
+  font-family: "Vector";
+  text-shadow: 5px 5px 0px rgb(0, 11, 187, 0.8),
+    10px 10px 0px rgb(0, 11, 187, 0.8), 15px 15px 0px rgb(0, 11, 187, 0.6),
+    20px 20px 0px rgb(255, 7, 58, 0.6), 25px 25px 0px rgb(255, 7, 58, 0.4),
+    30px 30px 0px rgb(255, 7, 58, 0.4), 35px 35px 0px rgb(254, 254, 51, 0.2),
+    40px 40px 0px rgb(254, 254, 51, 0.2), 45px 45px 0px rgb(254, 254, 51, 0.1);
+}
+
 #home h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  /*color: #d1f7ff;*/
-  color: #49fb35;
 }
 
 #home p {
-  color: #05d9e8;
+  color: #bc13fe;
+  margin-top: 60px;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Lato", sans-serif;
+  font-family: "Bit";
+  font-weight: 200;
 }
 
 #home p span {
-  color: #05d9e8;
+  color: #bc13fe;
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #ff2a6d;
@@ -351,12 +346,13 @@ section {
 }
 
 .section-title h2 {
+  font-family: "Vector";
   font-size: 32px;
   font-weight: bold;
+  letter-spacing: 2px;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  /*color: #d1f7ff;*/
   color: #49fb35;
 }
 
@@ -366,7 +362,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #05d9e8;
+  background: #ff2a6d;
   bottom: 0;
   left: 0;
 }
@@ -379,18 +375,18 @@ section {
     # About
     --------------------------------------------------------------*/
 .about {
-  background-color: #01012b;
+  background-color: #110d10;
 }
 
 .about h3 {
-  /*color: #d1f7ff;*/
   color: #49fb35;
+  letter-spacing: 2px;
 }
 
 .about .content h5 {
-  font-weight: 100;
-  font-size: 18px;
-  color: #05d9e8;
+  font-family: "Lato";
+  font-size: 16px;
+  color: #fff;
 }
 
 .about .content ul {
@@ -431,7 +427,7 @@ section {
 }
 
 .timeline hr {
-  border-top: 3px solid #ff2a6d;
+  border-top: 3px dotted #ff2a6d;
   margin: 0;
   top: 17px;
   position: relative;
@@ -445,10 +441,10 @@ section {
 }
 
 .timeline .corner {
-  border: 3px solid #ff2a6d;
+  border: 3px dotted #ff2a6d;
   width: 100%;
   position: relative;
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 .timeline .top-right {
@@ -481,12 +477,15 @@ section {
     --------------------------------------------------------------*/
 .experience {
   padding-bottom: 30px;
-  background-color: #01012b;
-  color: #05d9e8;
+  background-color: #110d10;
+  color: white;
 }
 
 .sub-heading {
-  color: #ff2a6d;
+  font-family: "Bit";
+  font-weight: 200;
+  font-size: 24px;
+  color: #bc13fe;
   padding-bottom: 30px;
 }
 
@@ -494,7 +493,7 @@ section {
     # Skills
     --------------------------------------------------------------*/
 .skills {
-  background-color: #01012b;
+  background-color: #110d10;
 }
 
 .skills .progress {
@@ -509,8 +508,8 @@ section {
   margin: 0 0 6px 0;
   text-transform: uppercase;
   display: block;
-  font-weight: 600;
-  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-family: "Bit";
   color: white;
 }
 
@@ -536,7 +535,7 @@ section {
     # Portfolio
     --------------------------------------------------------------*/
 .portfolio {
-  background-color: #01012b;
+  background-color: /*#01012b;*/ #110d10;
 }
 
 .portfolio .portfolio-item {
@@ -656,7 +655,7 @@ portfolio-img {
     --------------------------------------------------------------*/
 .contact {
   padding-bottom: 130px;
-  background-color: #01012b;
+  background-color: /*#01012b;*/ #110d10;
 }
 
 .contact a {
@@ -666,7 +665,7 @@ portfolio-img {
 
 .contact .info {
   padding: 30px;
-  background: #01012b;
+  background: /*#01012b;*/ #110d10;
   width: 100%;
 }
 
@@ -693,8 +692,9 @@ portfolio-img {
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
+  font-family: "Bit";
+  font-size: 18px;
+  font-weight: 200;
   margin-bottom: 5px;
   color: #ff2a6d;
 }
