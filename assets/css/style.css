@@ -389,6 +389,10 @@ section {
   color: #fff;
 }
 
+.about .content h5 a {
+  color: #bc13fe;
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -413,6 +417,7 @@ section {
 }
 
 .circle {
+  font-family: "Bit";
   padding: 13px 20px;
   background-color: transparent;
   border-style: solid;
@@ -487,6 +492,10 @@ section {
   font-size: 24px;
   color: #bc13fe;
   padding-bottom: 30px;
+}
+
+.education p {
+  margin-top: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -659,7 +668,7 @@ portfolio-img {
 }
 
 .contact a {
-  color: #05d9e8;
+  color: white;
   text-decoration: none;
 }
 
@@ -703,7 +712,7 @@ portfolio-img {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #05d9e8;
+  color: /*#05d9e8;*/ white;
 }
 
 .contact .info .email p {
