@@ -36,6 +36,10 @@ h6 {
   color: #49fb35;
 }
 
+col-lg {
+  width: 100%;
+}
+
 /*--------------------------------------------------------------
     # Back to top button
     --------------------------------------------------------------*/
@@ -46,7 +50,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #05d9e8;
+  background: #ff2a6d;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -61,7 +65,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #ff2a6d;
+  background: #bc13fe;
   color: black;
 }
 
@@ -386,11 +390,11 @@ section {
 .about .content h5 {
   font-family: "Lato";
   font-size: 16px;
-  color: #fff;
+  color: #d9d9dd;
 }
 
 .about .content h5 a {
-  color: #bc13fe;
+  color: #fff;
 }
 
 .about .content ul {
@@ -483,7 +487,7 @@ section {
 .experience {
   padding-bottom: 30px;
   background-color: #110d10;
-  color: white;
+  color: #a8a9b4;
 }
 
 .sub-heading {
@@ -494,8 +498,25 @@ section {
   padding-bottom: 30px;
 }
 
-.education p {
-  margin-top: 10px;
+.education h4,
+.experience h4 {
+  font-family: "Bit";
+  color: white;
+  margin-bottom: 15px;
+}
+
+.light-grey {
+  color: #d9d9dd;
+}
+
+.education.col-lg,
+.experience.col-lg {
+  border-color: #000bbb;
+  border-style: solid;
+  border-width: 2.5px;
+  border-image-slice: 1;
+  padding: 15px 15px 15px 15px;
+  margin-bottom: 45px;
 }
 
 /*--------------------------------------------------------------
@@ -544,7 +565,7 @@ section {
     # Portfolio
     --------------------------------------------------------------*/
 .portfolio {
-  background-color: /*#01012b;*/ #110d10;
+  background-color: #110d10;
 }
 
 .portfolio .portfolio-item {
@@ -590,6 +611,10 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border-color: #000bbb;
+  border-style: solid;
+  border-width: 2.5px;
+  border-image-slice: 1;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -668,7 +693,7 @@ portfolio-img {
 }
 
 .contact a {
-  color: white;
+  color: #d9d9dd;
   text-decoration: none;
 }
 
@@ -712,7 +737,7 @@ portfolio-img {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: /*#05d9e8;*/ white;
+  color: /*#05d9e8;*/ #d9d9dd;
 }
 
 .contact .info .email p {
@@ -727,7 +752,7 @@ portfolio-img {
   font-size: 18px;
   display: inline-block;
   background: #333;
-  color: #fff;
+  color: #d9d9dd;
   line-height: 1;
   padding: 8px 0;
   border-radius: 50%;
@@ -740,14 +765,14 @@ portfolio-img {
 }
 
 .contact .info .social-links a:hover {
-  background: #05d9e8;
+  background: #bc13fe;
   color: black;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #1ddecb;
+  background: #bc13fe;
   color: black;
 }
 

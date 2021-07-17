@@ -50,7 +50,10 @@
         if (!navbarlink.hash) return
         let section = select(navbarlink.hash)
         if (!section) return
-        if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+        if (navbarlink.hash === '#contact' && (window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+          navbarlink.classList.add('active')  // If scrolled to bottom of page, select "contact" in navbar
+          select('#navbar #pro').classList.remove('active')  // Need to remove active status for "projects"
+        } else if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
           navbarlink.classList.add('active')
         } else {
           navbarlink.classList.remove('active')
@@ -97,7 +100,7 @@
     })
   
     /**
-     * Scrool with ofset on links with a class name .scrollto
+     * Scroll with ofset on links with a class name .scrollto
      */
     on('click', '.scrollto', function(e) {
       if (select(this.hash)) {
