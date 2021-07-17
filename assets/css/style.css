@@ -3,17 +3,17 @@
   --------------------------------------------------------------*/
 @font-face {
   font-family: "Vector";
-  src: url("../fonts/VECTORBATTLE-E9XO.TTF");
+  src: url("../fonts/VectorBattle-e9XO.ttf");
 }
 
 @font-face {
   font-family: "Atarian";
-  src: url("../fonts/SFATARIANSYSTEM-D5LR.TTF");
+  src: url("../fonts/SfAtarianSystem-d5LR.ttf");
 }
 
 @font-face {
   font-family: "Pixograd";
-  src: url("../fonts/PIXOGRAD-NKDM.TTF");
+  src: url("../fonts/Pixograd-nKdM.ttf");
 }
 
 @font-face {
@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: "Pixograd";
+  font-family: "Lato", sans-serif;
   color: #272829;
 }
 
@@ -388,7 +388,7 @@ section {
 }
 
 .about .content h5 {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   color: #d9d9dd;
 }
