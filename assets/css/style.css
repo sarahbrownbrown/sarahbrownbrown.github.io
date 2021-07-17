@@ -36,10 +36,6 @@ h6 {
   color: #49fb35;
 }
 
-col-lg {
-  width: 100%;
-}
-
 /*--------------------------------------------------------------
     # Back to top button
     --------------------------------------------------------------*/
@@ -65,7 +61,7 @@ col-lg {
 }
 
 .back-to-top:hover {
-  background: #bc13fe;
+  background: #d9d9dd;
   color: black;
 }
 
@@ -140,7 +136,7 @@ col-lg {
 }
 
 #header .profile .social-links a:hover {
-  background: #5c58b6;
+  background: #a8a9b4;
   color: #fff;
   text-decoration: none;
 }
@@ -487,7 +483,7 @@ section {
 .experience {
   padding-bottom: 30px;
   background-color: #110d10;
-  color: #a8a9b4;
+  color: #d9d9dd;
 }
 
 .sub-heading {
@@ -503,10 +499,6 @@ section {
   font-family: "Bit";
   color: white;
   margin-bottom: 15px;
-}
-
-.light-grey {
-  color: #d9d9dd;
 }
 
 .education.col-lg,
@@ -689,7 +681,7 @@ portfolio-img {
     --------------------------------------------------------------*/
 .contact {
   padding-bottom: 130px;
-  background-color: /*#01012b;*/ #110d10;
+  background-color: #110d10;
 }
 
 .contact a {
@@ -699,7 +691,7 @@ portfolio-img {
 
 .contact .info {
   padding: 30px;
-  background: /*#01012b;*/ #110d10;
+  background: #110d10;
   width: 100%;
 }
 
@@ -709,7 +701,7 @@ portfolio-img {
   float: left;
   width: 44px;
   height: 44px;
-  background: #ff2a6d;
+  background: #bc13fe;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -730,14 +722,14 @@ portfolio-img {
   font-size: 18px;
   font-weight: 200;
   margin-bottom: 5px;
-  color: #ff2a6d;
+  color: #bc13fe;
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: /*#05d9e8;*/ #d9d9dd;
+  color: #d9d9dd;
 }
 
 .contact .info .email p {
@@ -765,14 +757,14 @@ portfolio-img {
 }
 
 .contact .info .social-links a:hover {
-  background: #bc13fe;
+  background: #d9d9dd;
   color: black;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #bc13fe;
+  background: #d9d9dd;
   color: black;
 }
 
